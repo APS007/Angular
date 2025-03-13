@@ -1,0 +1,24 @@
+{
+    "duration": 0,
+    "format": "csv",
+    "connections": [
+        {
+            "connection": {
+                "credentials": {
+                    "provider": "sql",
+                    "database_server": "Intellifysvr003",
+                    "database_user": "sa",
+                    "database": "IntellifyInsights",
+                    "database_password": "intellify@123"
+                },
+                "tables": [
+                    {
+                        "table_name": "dbo.1MSalesRecords",
+                        "select_clause": "SELECT * FROM dbo.[1MSalesRecords]",
+                        "delta_column_name": "order_date"
+                    }
+                ]
+            }
+        }
+    ]
+}
